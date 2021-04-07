@@ -3,4 +3,4 @@
 	url = https://github.com/Rbillon59/hass-backup-s3
 [submodule "hass-n8n"]
 	path = hass-n8n
-	url = https://github.com/Rbillon59/hass-n8n
+	url = git@github.com:Rbillon59/hass-n8n.git
