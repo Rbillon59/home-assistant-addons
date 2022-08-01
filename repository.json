@@ -1,4 +1,6 @@
 
 {
-  "name": "Rbillon addons"
+  "name": "Rbillon addons",
+  "url": "https://github.com/Rbillon59/home-assistant-addons",
+  "maintainer": "Romain Billon"
 }
