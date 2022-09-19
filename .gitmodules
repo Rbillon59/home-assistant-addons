@@ -4,3 +4,6 @@
 [submodule "hass-n8n"]
 	path = hass-n8n
 	url = https://github.com/Rbillon59/hass-n8n.git
+[submodule "hass-deepstack"]
+	path = hass-deepstack
+	url = https://github.com/Rbillon59/hass-deepstack
