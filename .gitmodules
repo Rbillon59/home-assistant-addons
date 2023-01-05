@@ -7,3 +7,6 @@
 [submodule "hass-deepstack"]
 	path = hass-deepstack
 	url = https://github.com/Rbillon59/hass-deepstack
+[submodule "hass-jellyfin"]
+	path = hass-jellyfin
+	url = https://github.com/Rbillon59/hass-jellyfin
