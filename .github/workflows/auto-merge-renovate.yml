@@ -1,0 +1,26 @@
+name: Auto-merge Renovate PRs
+
+permissions: write-all
+
+on:
+  pull_request:
+    types: [opened, reopened]
+
+jobs:
+  auto-merge:
+    if: github.actor == 'renovate[bot]'
+    runs-on: ubuntu-latest
+
+    steps:      
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          
+      - name: Enable auto-merge using GitHub CLI
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr merge ${{ github.event.pull_request.number }} \
+            --auto \
+            --squash
